@@ -58,6 +58,6 @@ export default async function paymentWebhookhandler({
 export const config: SubscriberConfig = {
   event: PaymentWebhookEvents.WebhookReceived,
   context: {
-    subscriberId: "payment-webhook-handler",
+    subscriberId: "payment-webhook-handler-" + Date.now(),
   },
 }

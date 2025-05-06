@@ -85,6 +85,6 @@ export default async function configurableNotifications({
 export const config: SubscriberConfig = {
   event: handlerConfig.map((h) => h.event),
   context: {
-    subscriberId: "configurable-notifications-handler",
+    subscriberId: "configurable-notifications-handler-" + Date.now(),
   },
 }
